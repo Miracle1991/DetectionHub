@@ -14,7 +14,7 @@ import numpy as np
 class WheatDataset(object):
     def __init__(self, data_dir, transforms=None):
         super().__init__()
-        DIR_INPUT = '/media/w/Data/globel-wheat-detection'
+        DIR_INPUT = '/kaggle/input/global-wheat-detection/'
         self.image_dir = f'{DIR_INPUT}/train'
         train_df = pd.read_csv(f'{DIR_INPUT}/train.csv')
         train_df['x'] = -1
