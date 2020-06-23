@@ -42,7 +42,7 @@ Tensor upsample_bilinear(const Tensor& inp, int64_t w, int64_t h) {
 
 
 static auto registry =
-  torch::jit::RegisterOperators()
+  torch::RegisterOperators()
     .op("DetectionHub::nms", &nms)
     .op("DetectionHub::roi_align_forward(Tensor input, Tensor rois, float spatial_scale, int pooled_height, int pooled_width, int sampling_ratio) -> Tensor", &ROIAlign_forward)
     // .op("DetectionHub::add_annotations", &add_annotations)
