@@ -39,7 +39,7 @@ class WheatDataset(object):
         train_ids = image_ids
         self.train_df = train_df[train_df['image_id'].isin(train_ids)]
 
-        images_root = '/media/w/Data/globel-wheat-detection/train'
+        images_root = '/kaggle/input/global-wheat-detection/train'
         self.images = os.listdir(images_root)
         self._transforms = transforms
 

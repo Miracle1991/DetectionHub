@@ -124,7 +124,7 @@ def main():
     parser = argparse.ArgumentParser(description="PyTorch Object Detection Training")
     parser.add_argument(
         "--config-file",
-        default="/home/w/workspace/DetectionHub/configs/global_wheat.yaml",
+        default="../configs/global_wheat.yaml",
         metavar="FILE",
         help="path to config file",
         type=str,
