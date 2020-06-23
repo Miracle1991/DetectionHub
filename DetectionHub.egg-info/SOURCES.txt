@@ -7,10 +7,6 @@ setup.py
 /home/w/workspace/commit/DetectionHub/csrc/cuda/ROIAlign_cuda.cu
 /home/w/workspace/commit/DetectionHub/csrc/cuda/ROIPool_cuda.cu
 /home/w/workspace/commit/DetectionHub/csrc/cuda/SigmoidFocalLoss_cuda.cu
-/home/w/workspace/commit/DetectionHub/csrc/cuda/deform_conv_cuda.cu
-/home/w/workspace/commit/DetectionHub/csrc/cuda/deform_conv_kernel_cuda.cu
-/home/w/workspace/commit/DetectionHub/csrc/cuda/deform_pool_cuda.cu
-/home/w/workspace/commit/DetectionHub/csrc/cuda/deform_pool_kernel_cuda.cu
 /home/w/workspace/commit/DetectionHub/csrc/cuda/nms.cu
 /home/w/workspace/commit/DetectionHub/csrc/custom_ops/custom_ops.cpp
 DetectionHub/__init__.py

@@ -4,8 +4,6 @@
 #include "ROIAlign.h"
 #include "ROIPool.h"
 #include "SigmoidFocalLoss.h"
-#include "deform_conv.h"
-#include "deform_pool.h"
 #include "PSROIPool.h"
 
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
@@ -17,13 +15,6 @@ PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
   m.def("sigmoid_focalloss_forward", &SigmoidFocalLoss_forward, "SigmoidFocalLoss_forward");
   m.def("sigmoid_focalloss_backward", &SigmoidFocalLoss_backward, "SigmoidFocalLoss_backward");
   // dcn-v2
-  m.def("deform_conv_forward", &deform_conv_forward, "deform_conv_forward");
-  m.def("deform_conv_backward_input", &deform_conv_backward_input, "deform_conv_backward_input");
-  m.def("deform_conv_backward_parameters", &deform_conv_backward_parameters, "deform_conv_backward_parameters");
-  m.def("modulated_deform_conv_forward", &modulated_deform_conv_forward, "modulated_deform_conv_forward");
-  m.def("modulated_deform_conv_backward", &modulated_deform_conv_backward, "modulated_deform_conv_backward");
-  m.def("deform_psroi_pooling_forward", &deform_psroi_pooling_forward, "deform_psroi_pooling_forward");
-  m.def("deform_psroi_pooling_backward", &deform_psroi_pooling_backward, "deform_psroi_pooling_backward");
   m.def("psroi_pool_forward", &PSROIPool_forward, "PSROIPool_forward");
   m.def("psroi_pool_backward", &PSROIPool_backward, "PSROIPool_backward");
 }
