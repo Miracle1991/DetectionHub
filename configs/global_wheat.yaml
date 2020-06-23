@@ -2,7 +2,7 @@
 
 MODEL:
   META_ARCHITECTURE: "GeneralizedRCNN"
-  WEIGHT: "/home/w/workspace/DetectionHub/tools/output_obj-focal-loss-3/model_final.pth"
+  #WEIGHT: "/home/w/workspace/DetectionHub/tools/output_obj-focal-loss-3/model_final.pth"
   BACKBONE:
     CONV_BODY: "Densebox32T"
     OUT_CHANNELS: 128
